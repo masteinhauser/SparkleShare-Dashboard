@@ -504,5 +504,5 @@ app.get('*', function(req, res, next){
 });
 
 
-app.listen(config.listen.port, config.listen.host);
+app.listen(config.listen.port);
 console.log("SparkleShare Dashboard listening on port %d in %s mode", app.address().port, app.settings.env);

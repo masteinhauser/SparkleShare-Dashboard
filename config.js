@@ -1,13 +1,14 @@
 exports.sessionSecret = 'JustSomeRandomString';
 
 exports.folders = [
-  { type: 'git', name: 'Public GIT folder', path: '/home/nexus/Desktop/play/SparkleDashboard-x/repos/g1', pub: true },
-  { type: 'git', name: 'Private GIT folder', path: '/home/nexus/Desktop/play/SparkleDashboard-x/repos/g2', pub: false }
+  { type: 'git', name: 'Public', path: '/home/git/Public', pub: true },
+  { type: 'git', name: 'Documents', path: '/home/git/Documents', pub: false },
+  { type: 'git', name: 'Pictures', path: '/home/git/Pictures', pub: false }
 ];
 
 exports.listen = {
   port: 3000,
-  host: null
+  host: '72.9.254.61'
 };
 
 exports.https = {
@@ -16,11 +17,11 @@ exports.https = {
   cert: '/path/to/cert.crt'
 };
 
-exports.basepath = '';
-exports.externalUrl = null;
+exports.basepath = '/sparkle';
+exports.externalUrl = 'http://72.9.254.61/sparkle';
 
 // 300 sec
-exports.linkCodeValidFor = 300;
+exports.linkCodeValidFor = 31449600;
 
 // none | min | info | debug
 exports.logging = 'none';
