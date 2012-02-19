@@ -1,13 +1,12 @@
 exports.sessionSecret = 'JustSomeRandomString';
 
 exports.folders = [
-  { type: 'git', name: 'Public', path: '/home/git/Public', pub: true },
   { type: 'git', name: 'Documents', path: '/home/git/Documents', pub: false },
   { type: 'git', name: 'Pictures', path: '/home/git/Pictures', pub: false }
 ];
 
 exports.listen = {
-  port: 3000,
+  port: 3001,
   host: '72.9.254.61'
 };
 
