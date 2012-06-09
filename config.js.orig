@@ -24,6 +24,8 @@ exports.linkCodeValidFor = 31449600;
 
 // none | min | info | debug
 exports.logging = 'none';
+<<<<<<< HEAD
+=======
 
 exports.fanout = {
   enabled: false,
@@ -36,3 +38,4 @@ exports.backend = {
     'bin': 'git'
   }
 };
+>>>>>>> 67972c22f1cf04dde90c0f4b63e0ebb345774f6d
