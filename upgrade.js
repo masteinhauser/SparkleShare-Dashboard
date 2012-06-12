@@ -27,11 +27,11 @@ function createUserDeviceNames(rclient, next) {
           rclient.sadd("uid:" + uid + ":deviceNames", '');
           return next();
         }
-        //devices.forEach(function(device) {
-        //  rclient.sadd("uid:" + uid + ":deviceNames", device.name ? device.name : '');
-        //  if (--dcount === 0) {
+        devices.forEach(function(device) {
+          rclient.sadd("uid:" + uid + ":deviceNames", device.name ? device.name : '');
+          if (--dcount === 0) {
             return next();
-        //  }
+          }
         });
       });
     }

@@ -7,7 +7,7 @@ exports.folders = [
 
 exports.listen = {
   port: 3001,
-  host: '72.9.254.61'
+  host: '64.6.100.239'
 };
 
 exports.https = {
@@ -16,8 +16,8 @@ exports.https = {
   cert: '/path/to/cert.crt'
 };
 
-exports.basepath = '/sparkle';
-exports.externalUrl = 'http://72.9.254.61/sparkle';
+exports.basepath = '';
+exports.externalUrl = 'http://64.6.100.239:3001';
 
 // 300 sec
 exports.linkCodeValidFor = 31449600;
